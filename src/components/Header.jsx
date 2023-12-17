@@ -14,7 +14,7 @@ const Header = () => {
     <p className=''>Roshan</p>
     </div>
     <div className='flex items-center gap-12 mr-4'>
-    <div>Home</div>
+    <div className=''>Home</div>
     <div>features</div>
     <div>Projects</div>
     <div>Resume</div>
