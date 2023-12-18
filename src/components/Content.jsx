@@ -9,15 +9,15 @@ const nameColorArr = ['text-green-800', 'text-blue-800', 'text-red-800'];
 
 useEffect(() => {
   let i = 0;
+  setNameColor(nameColorArr[i]); // Set initial color
+
   const interval = setInterval(() => {
-    if (i >= nameColorArr.length) {
-      i = 0;
-    }
-    setNameColor(nameColorArr[i++]);
+    i = (i + 1) % nameColorArr.length;
+    setNameColor(nameColorArr[i]); // Set the next color
   }, 2000);
 
-  return () => clearInterval(interval); 
-}, );
+  return () => clearInterval(interval);
+}, []); 
   
   
   return (

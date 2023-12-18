@@ -1,7 +1,4 @@
 import React, { useEffect } from 'react'
-
-
-
 const Header = () => {
   return (
     <div className='h-[10vh]  flex justify-between item-center'>
@@ -15,7 +12,7 @@ const Header = () => {
     </div>
     <div className='flex items-center gap-12 mr-4'>
     <div className=''>Home</div>
-    <div>features</div>
+    <div>Features</div>
     <div>Projects</div>
     <div>Resume</div>
 
